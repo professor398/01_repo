@@ -1,76 +1,122 @@
 <html>
-	<title> This is a web </title>
-		<style>
+<title> This is a web </title>
+<style>
 
-			h1 {
-				padding:0;
-				margin:0;
-				color: #E3402C;
-				font-size:39px;
-				background-color:white;
-				font-spacing:10;
-				text-align: center;
-				text-decoration: double;
-				
-				
-				
-			   }
+	html, body {
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.content {
+		flex: 1;
+		padding: 20px;
+	}
+	h1 {
+		padding: 0;
+		margin: 0;
+		color: #E3402C;
+		font-size: 39px;
+		background-color: rgb(0, 0, 0);
+		text-align: center;
+		text-decoration: double;
+		word-spacing: 6px;
+	}
 
-			* {
-				margin:0;
-				padding:0;
-				background-color: rgb(156, 254, 182);
-			  }
-			
-			body h2{
-				
-				margin: 0px;
-				color: white;
-				background-color:black;
-				padding:15;
-				font-family: serif;
-				font-size: 35px;
-				
-			   }
-			body ul{
-				
-				margin:45px;
-				font-size: 21px;
-			   }
+	* {
+		margin: 0;
+		padding: 0;
+	}
 
-		</style>
-	<mean>
-		
-	
-		<header>
-			<nav>
-				<h1> Hello This is my first website </h1> 
-				
-			</nav>
-		</header>
-	</mean>
+	body h2 {
 
-	<body>
-		
+		margin: 0px;
+		color: rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+		padding: 15;
+		font-family: serif;
+		font-size: 35px;
 
+	}
+
+	body ul {
+
+		margin: 45px;
+		font-size: 21px;
+	}
+
+
+	.back-page {
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+		color: white;
+		border-radius: 5px;
+		background-color: #007BFF;
+		font-size: 14px;
+		text-decoration: none;
+		transition: background-color 0.3s;
+	}
+
+	.back-page:hover {
+		background-color: #0056b3;
+	}
+	.footer {
+		background-color: #222;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+		margin-top: 50px;
+	}
+	.footer-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	.footer-nav {
+		margin-top: 10px;
+		columns: #ccc;
+		margin: 0 10px;
+		text-decoration: none;
+		font-size: 14px;
+	}
+</style>
+<mean>
+
+
+	<header>
+		<nav>
+			<h1> Hello This is my first website </h1>
+
+		</nav>
+	</header>
+</mean>
+
+<body>
+	<div class="content">
 		<h2> This is my profile </h2>
-		<ul> 
-			<li> Name:  JAUHAR EAMAM </li>
-			<li> Branch:  ELECTRONICS AND TELE-COMUNICATION 		</li>
-			<li> Section:  Q2 </li>
-			<li> Contact:  0000-0000-00 </li>
+		<ul>
+			<li> Name: JAUHAR EAMAM </li>
+			<li> Branch: ELECTRONICS AND TELE-COMUNICATION </li>
+			<li> Section: Q2 </li>
+			<li> Contact: 0000-0000-00 </li>
+		</ul>
+			<a href="index.html" class="Back-page"> Back page </a>
 
+	</div>
 
-	</body> 
+	<footer class="footer">
+		<div class="footer-content">
+			<p> &copy 2025 MyWebsite. All rights reserved.</p>
+			<nav class="privacy-policy">
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Service</a>
+				<a href="#">Contact Us</a>
 
-	<footer>
-		<div>
-			<ul>
-				<li> <a href="index.html" > Contact </a> </li>
-			</ul>
-			
+			</nav>
 		</div>
-
-
 	</footer>
+</body>
+
 </html>
